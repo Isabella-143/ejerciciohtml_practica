@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página sobre Stray Kids">
+  <meta name="keywords" content="Stray Kids, SKZ, STAY, K-pop">
+  <meta name="author" content="Fan de Stray Kids">
+  <title>Stray Kids</title>
+</head>
+<body>
+
+  <header>
+    <h1>Stray Kids</h1>
+    <nav>
+      <a href="#integrantes">Integrantes</a>
+      <a href="#datos">Datos</a>
+      <a href="#registro">Registro</a>
+    </nav>
+  </header>
+
+  <h2>Grupo de K-pop de JYP Entertainment</h2>
+  <h3>Debut: 25 de marzo de 2018</h3>
+  <h4>Fandom: STAY</h4>
+  <h3>8 integrantes</h5>
+  <h3>Álbum debut: I Am NOT</h4>
+
+  <p>Stray Kids es un grupo surcoreano formado en el programa de supervivencia Stray Kids (2017).</p>
+  <p>Producen gran parte de su música, que mezcla hip hop, EDM y rock.</p>
+
+  <hr>
+
+  <h2 id="integrantes">Integrantes</h2>
+  <p>
+    Bang Chan (líder)<br>
+    Lee Know (bailarín principal)<br>
+    Changbin (rapero principal)<br>
+    Hyunjin (bailarín y rapero)<br>
+    Han (rapero y vocalista)<br>
+    Felix (rapero y bailarín)<br>
+    Seungmin (vocalista principal)<br>
+    I.N (vocalista y maknae)
+  </p>
+
+  <img src="images.webp" alt="Imagen de Stray Kids" width="400" height="350" loading="lazy">
+
+  <hr>
+
+  <h2 id="datos">Datos</h2>
+  <p>
+    Canciones: District 9, Miroh, God's Menu, Thunderous, MANIAC, S-Class, Chk Chk Boom<br>
+    Unidades: 3RACHA, Dance Racha y Vocal Racha
+  </p>
+
+  <button onclick="document.getElementById('info').showModal()">Ver más información</button>
+
+  <dialog id="info">
+    <h3>Stray Kids</h3>
+    <p>Agencia: JYP Entertainment. Fandom: STAY.</p>
+    <button onclick="document.getElementById('info').close()">Cerrar</button>
+  </dialog>
+
+  <hr>
+<img src="Hyunjin.png" alt="Imagen de Stray Kids" width="400" height="500" loading="lazy"> <br>
+
+  <h2 id="registro">Únete a STAY</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br><br>
+
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo"><br><br>
+
+    <label for="clave">Contraseña:</label>
+    <input type="password" id="clave" name="clave" minlength="8"><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="0" max="100"><br><br>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha"><br><br>
+
+    <label for="bias">Tu integrante favorito:</label>
+    <select id="bias" name="bias">
+      <option value="">Selecciona uno</option>
+      <option>Bang Chan</option>
+      <option>Lee Know</option>
+      <option>Changbin</option>
+      <option>Hyunjin</option>
+      <option>Han</option>
+      <option>Felix</option>
+      <option>Seungmin</option>
+      <option>I.N</option>
+    </select><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe aquí..."></textarea><br><br>
+
+    <input type="checkbox" id="acepto" name="acepto">
+    <label for="acepto">Soy STAY</label><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
